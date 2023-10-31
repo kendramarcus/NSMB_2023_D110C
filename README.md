@@ -30,7 +30,7 @@ For pool A, a synonymous codon mutation was located in the gp44 gene (GCC to GCT
 
 ./counter.sh
 
-The count scripts were updated just prior to running to change the output file name and input files (joined .fasta) 
+output file name and input files were updated in each script just prior to running (joined .fasta) 
 
 3) The output files of this script are .txt lists of counts per sequence searched. The order of the lists correspond to the order of mutants accounted for in each .xls sheet (see Figure2.xls for count data of pools A and B, exFigure4.xls for count data of smaller scale selections)
 
@@ -64,13 +64,13 @@ fitnesses were calculated and visualized in Matlab. However, any data processing
 
 The heatmap of fitness values was generated using Matlab using a color gradient provided as 'newCmap.txt', also located in this drive folder. To generate the heatmap using Matlab, the following commands were used:
 
-h= imshow(normalizedmatrixname,[-3 3],'initialmagnification','fit');
-colormap(newCmap)
-set(gca,'ytick',1:1:21,'YTickLabel',aa);
-set(gca, 'xtick',1:1:114, 'XTickLabel',Xaxis2);
-axis on
-set(gca,'color','0.7,0.7,0.7')
-set(h,'alphadata',~isnan(normalizedmatrixname))
+<br> h= imshow(normalizedmatrixname,[-3 3],'initialmagnification','fit');
+<br> colormap(newCmap)
+<br> set(gca,'ytick',1:1:21,'YTickLabel',aa);
+<br> set(gca, 'xtick',1:1:114, 'XTickLabel',Xaxis2);
+<br> axis on
+<br> set(gca,'color','0.7,0.7,0.7')
+<br> set(h,'alphadata',~isnan(normalizedmatrixname))
 
 Where 'aa' was the Y axis values 'KREDNQHTSCAVLIMFYWGP*'
 And 'Xaxis2' is the clamp loader sequence 

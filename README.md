@@ -3,7 +3,6 @@ Code used for DMS analysis in the publication "Autoinhibition of a clamp-loader 
 
 ==========================
 For the raw sequencing data of all deep mutational scanning experiments, please refer to BioProject PRJNA1025274
-==========================
 
 File types:
 

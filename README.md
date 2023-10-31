@@ -2,9 +2,10 @@
 Code used for DMS analysis in the publication "Autoinhibition of a clamp-loader ATPase revealed by deep mutagenesis and cryo-EM"
 
 ==========================
+
 For the raw sequencing data of all deep mutational scanning experiments, please refer to BioProject PRJNA1025274
 
-File types:
+<b>File types:</b>
 
 fasta.gz files (downloaded from Bioproject PRJNA1025274) - paired end reads of clamp loader sequences obtained directly from the Illumina Miseq instrument. The file names include the data type (input or selected replicate, 'rep#'), index number (70x-50x), and paired-end read direction (R1 or R2)
  
@@ -19,7 +20,7 @@ For pool A, a synonymous codon mutation was located in the gp44 gene (GCC to GCT
 
 ================
 
-Protocol for generating count data from .gz files
+<b> Protocol for generating count data from .gz files </b>
 
 1) FLASH is performed on *_R1.fasta.gz and *_R2.fasta.gz files of the same index (70x_50x) as follows:
 
@@ -31,14 +32,14 @@ Protocol for generating count data from .gz files
 
 The count scripts were updated just prior to running to change the output file name and input files (joined .fasta) 
 
-3) The output files of this script are .txt lists of counts per sequence searched. The order of the lists correspond to the order of mutants accounted for in each .xls sheet (see CompiledCountData_2023.xls)
+3) The output files of this script are .txt lists of counts per sequence searched. The order of the lists correspond to the order of mutants accounted for in each .xls sheet (see Figure2.xls for count data of pools A and B, exFigure4.xls for count data of smaller scale selections)
 
 Please note that only the forward reads were used for P50NNS and S35NNS counting and the reverse read of the G143NNS data was used. 
 
 
 =================== 
 
-Protocol for obtaining fitness values from count data 
+<b> Protocol for obtaining fitness values from count data </b>
 
 fitnesses were calculated and visualized in Matlab. However, any data processing software can be used as follows:
 
@@ -59,7 +60,7 @@ fitnesses were calculated and visualized in Matlab. However, any data processing
 
 =====================
 
-Protocol for generating heatmap from fitness values
+<b> Protocol for generating heatmap from fitness values </b>
 
 The heatmap of fitness values was generated using Matlab using a color gradient provided as 'newCmap.txt', also located in this drive folder. To generate the heatmap using Matlab, the following commands were used:
 
